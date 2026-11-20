@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f47b20">
+  <title>Acceso | Universidad Autónoma del Perú</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+  <header class="auth-top"><a href="index.html"><img src="assets/logo-autonoma.png" alt="Universidad Autónoma del Perú"></a><span>Portal de acceso seguro</span></header>
+  <main class="auth-wrap">
+    <section class="brand-panel">
+      <img class="symbol" src="assets/logo-simbolo.png" alt="">
+      <p class="eyebrow">UNIVERSIDAD AUTÓNOMA DEL PERÚ</p>
+      <h1>Tu identidad,<br><em>tu universidad.</em></h1>
+      <p>Accede a tu espacio universitario de forma sencilla y segura desde tu celular o computadora.</p>
+      <div class="trust-points"><span>● Acceso protegido</span><span>● Diseño adaptable a móviles</span><span>● Identificación con tu dispositivo</span></div>
+    </section>
+    <section class="auth-card">
+      <div class="tabs"><button class="tab active" data-tab="login">Iniciar sesión</button><button class="tab" data-tab="register">Crear cuenta</button></div>
+      <div id="login-panel">
+        <p class="eyebrow orange">BIENVENIDO DE VUELTA</p><h2>Identifícate</h2><p class="muted">Elige cómo deseas acceder a tu cuenta.</p>
+        <label class="field-label" for="login-email">Correo electrónico</label><input id="login-email" type="email" placeholder="nombre@correo.com" autocomplete="username">
+        <label class="field-label" for="login-password">Contraseña</label><input id="login-password" type="password" placeholder="Tu contraseña" autocomplete="current-password">
+        <div class="method-list">
+          <button class="method" id="passkey-login"><span class="method-icon">⌁</span><span><b>Huella o rostro</b><small>Usa la biometría configurada en tu dispositivo</small></span><span class="arrow">›</span></button>
+          <button class="method" id="voice-login"><span class="method-icon">♫</span><span><b>Identificación por voz</b><small>Solicita habilitación de voz biométrica</small></span><span class="arrow">›</span></button>
+        </div>
+        <p class="hint" id="login-status" aria-live="polite">Ingresa con el correo y la contraseña que registraste. Si aún no tienes cuenta, selecciona “Crear cuenta”.</p>
+        <button class="primary full" id="demo-login">Iniciar sesión</button>
+      </div>
+      <div id="register-panel" hidden>
+        <p class="eyebrow orange">NUEVO USUARIO</p><h2>Crea tu cuenta</h2><p class="muted">Completa tus datos y registra un método seguro.</p>
+        <label class="field-label" for="full-name">Nombres y apellidos</label><input id="full-name" placeholder="Como aparece en tu documento" autocomplete="name">
+        <label class="field-label" for="reg-email">Correo electrónico</label><input id="reg-email" type="email" placeholder="nombre@correo.com" autocomplete="email">
+        <label class="field-label" for="reg-password">Crea una contraseña</label><input id="reg-password" type="password" placeholder="Mínimo 8 caracteres" autocomplete="new-password">
+        <div class="enroll-title">Registra tu identificación</div>
+        <button class="method" id="passkey-register"><span class="method-icon">⌁</span><span><b>Huella o reconocimiento facial</b><small>El móvil mostrará el método compatible</small></span><span class="arrow">›</span></button>
+        <button class="method" id="voice-enroll"><span class="method-icon">♫</span><span><b>Registrar muestra de voz</b><small>Graba una frase para la futura integración biométrica</small></span><span class="arrow">›</span></button>
+        <p class="hint" id="register-status" aria-live="polite">La huella o el rostro se procesan en el dispositivo; este sitio no recibe la imagen de tu rostro ni tu huella.</p>
+        <button class="primary full" id="create-account">Crear cuenta de demostración</button>
+      </div>
+      <p class="legal">Prototipo académico. No ingreses contraseñas reales ni datos personales sensibles.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body></html>

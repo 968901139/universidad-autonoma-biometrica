@@ -1,0 +1,33 @@
+SISTEMA WEB - UNIVERSIDAD AUTÓNOMA DEL PERÚ
+VERSIÓN ACTUALIZADA SOBRE TU ARCHIVO ORIGINAL
+
+IMPORTANTE: Se conservaron los archivos y páginas que ya tenía tu ZIP original:
+- index.html (acceso y registro)
+- home.html (página principal)
+- carreras.html (listado original de áreas y carreras)
+- beneficios.html (beneficios y modalidades)
+- styles.css (diseño original)
+- app.js (funciones)
+- assets/logo-simbolo.png y assets/logo-autonoma.png (logotipos originales)
+
+MEJORAS AGREGADAS
+- Aviso cuando una persona intenta entrar sin estar registrada o sin iniciar sesión.
+- Registro local y acceso con correo y contraseña.
+- Se bloquea el acceso directo a Inicio, Carreras y Beneficios si no hay sesión.
+- Cerrar sesión termina la sesión.
+- Se conserva la opción de passkey (huella/rostro/PIN del dispositivo compatible).
+- Se conserva la captura de muestra de voz.
+- Se agregó una galería con una imagen ilustrativa para cada carrera del listado (31 imágenes SVG locales).
+- Se mantuvieron los textos, cifras, beneficios, navegación, logotipos y diseño que estaban en tu ZIP.
+
+CÓMO ABRIR
+1. Extrae el ZIP.
+2. Abre la carpeta completa en Visual Studio Code.
+3. Abre index.html con Live Server (localhost).
+4. Prueba primero Crear cuenta; luego cierra sesión y prueba iniciar sesión.
+
+LIMITACIONES IMPORTANTES
+Este proyecto sigue siendo un prototipo académico frontend. Las cuentas se guardan localmente en el navegador y no comprueban matrícula real en la universidad. Para confirmar si una persona es estudiante se necesita acceso autorizado a la base de datos institucional mediante un backend seguro.
+Las passkeys muestran la verificación local del dispositivo, pero para autenticación institucional real se necesita servidor WebAuthn que valide criptográficamente las respuestas. La función de voz solo graba audio; no reconoce la identidad de la persona.
+No uses contraseñas reales ni datos personales sensibles en esta demostración.
+La galería usa ilustraciones propias locales para representar cada carrera; no son fotografías oficiales de la universidad.
